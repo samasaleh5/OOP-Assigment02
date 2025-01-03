@@ -38,11 +38,11 @@ namespace OOP_Assigment02
             //Parent p = new Parent(1, 2);
             //Console.WriteLine(p);
             //Console.WriteLine(p.product());
-            //Child c = new Child(1, 2, 3);
-            //Console.WriteLine(c);
-            //Console.WriteLine(c.product());
+            Child c = new Child(1, 2, 3);
+            Console.WriteLine(c);
+            Console.WriteLine(c.product());
             #endregion
-            
+
 
         }
     }
