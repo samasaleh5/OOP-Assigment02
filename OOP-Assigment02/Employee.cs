@@ -14,7 +14,8 @@ namespace OOP_Assigment02
         Guest,
         Developer,
         Secretary,
-        DBA
+        DBA,
+        SecurityOfficer
     }
     internal class Employee
     {

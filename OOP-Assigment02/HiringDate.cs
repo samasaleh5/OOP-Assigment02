@@ -14,9 +14,12 @@ namespace OOP_Assigment02
 
         public HiringDate(int day, int month, int year)
         {
-            if (day < 1 || day > 31) throw new ArgumentException("Day must be between 1 and 31.");
-            if (month < 1 || month > 12) throw new ArgumentException("Month must be between 1 and 12.");
-            if (year < 1900 || year > DateTime.Now.Year) throw new ArgumentException("Year must be reasonable.");
+            if (day < 1 || day > 31) 
+                Console.WriteLine("Day must be between 1 and 31.");
+            if (month < 1 || month > 12)
+                Console.WriteLine("Month must be between 1 and 12.");
+            if (year < 1900 || year > DateTime.Now.Year)
+                Console.WriteLine("Year must be reasonable.");
 
             Day = day;
             Month = month;
