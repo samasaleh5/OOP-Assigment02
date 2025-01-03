@@ -33,15 +33,15 @@ namespace OOP_Assigment02
             }
         }
         public decimal Salary{ set; get; }
-        public DateTime HireDate { get; set; }
+        public HiringDate HiringDate { set; get; }
         public SecurityLevel SecurityPrivilege {  get; set; }
-        public Employee(int id,string name,string gender,decimal salary,DateTime hireDate,SecurityLevel securityPrivilege)
+        public Employee(int id,string name,string gender,decimal salary,HiringDate hireDate,SecurityLevel securityPrivilege)
         {
             Id = id;
             Name = name;
             Gender = gender;
             Salary = salary;
-            HireDate = hireDate;
+            HiringDate = hireDate;
             SecurityPrivilege = securityPrivilege;
         }
         public override string ToString()
@@ -51,7 +51,7 @@ namespace OOP_Assigment02
                             Name,
                             Gender,
                             Salary.ToString("C", CultureInfo.CurrentCulture),
-                            HireDate.ToString("d"),
+                            HiringDate,
                             SecurityPrivilege);
             
         }

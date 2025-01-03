@@ -43,10 +43,11 @@ namespace OOP_Assigment02
             //Console.WriteLine(c.product());
             #endregion
             //Part02
-            #region Question1
+            #region Question1-2
             try
             {
-                Employee emp = new Employee(1, "Sama", "S", 95000.90m, DateTime.Today, SecurityLevel.Developer);
+                HiringDate hireDate = new HiringDate(21, 5, 2020);
+                Employee emp = new Employee(1, "Sama", "F", 95000.90m, hireDate, SecurityLevel.Developer);
                 Console.WriteLine(emp);
             }
             catch (Exception ex)
@@ -54,7 +55,6 @@ namespace OOP_Assigment02
                 Console.WriteLine(ex.Message);
             }
             #endregion
-
 
         }
     }
