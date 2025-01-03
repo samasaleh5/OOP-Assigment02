@@ -34,7 +34,7 @@ namespace OOP_Assigment02
             }
         }
         public decimal Salary{ set; get; }
-        public HiringDate HiringDate { set; get; }
+        public HiringDate HireDate { set; get; }
         public SecurityLevel SecurityPrivilege {  get; set; }
         public Employee(int id,string name,string gender,decimal salary,HiringDate hireDate,SecurityLevel securityPrivilege)
         {

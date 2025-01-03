@@ -56,10 +56,29 @@ namespace OOP_Assigment02
             //}
             #endregion
             #region Question3
+            //try
+            //{
+            //    Employee[] EmpArr = new Employee[3];
+            //    EmpArr[0]=new Employee(1, "Sama", "F", 95000.90m, new HiringDate(1, 2, 2020), SecurityLevel.DBA);
+            //    EmpArr[1] = new Employee(5, "Saleh", "M", 100000.87m, new HiringDate(14, 6, 2017), SecurityLevel.Guest);
+            //    EmpArr[2] = new Employee(9, "zeiad", "z", 20000.09m, new HiringDate(30, 2, 2001), SecurityLevel.SecurityOfficer);
+
+            //    foreach (var emp in EmpArr)
+            //    {
+            //        Console.WriteLine(emp);
+            //    }
+            //}
+            //catch (Exception ex)
+            //{
+            //    Console.WriteLine(ex.Message);
+            // }
+            #endregion
+            #region Question4
+          
             try
             {
                 Employee[] EmpArr = new Employee[3];
-                EmpArr[0]=new Employee(1, "Sama", "F", 95000.90m, new HiringDate(1, 2, 2020), SecurityLevel.DBA);
+                EmpArr[0] = new Employee(1, "Sama", "F", 95000.90m, new HiringDate(1, 2, 2020), SecurityLevel.DBA);
                 EmpArr[1] = new Employee(5, "Saleh", "M", 100000.87m, new HiringDate(14, 6, 2017), SecurityLevel.Guest);
                 EmpArr[2] = new Employee(9, "zeiad", "z", 20000.09m, new HiringDate(30, 2, 2001), SecurityLevel.SecurityOfficer);
 
@@ -67,6 +86,27 @@ namespace OOP_Assigment02
                 {
                     Console.WriteLine(emp);
                 }
+                //sort not work by compare or by two arrgument array and item comapre with
+               // Array.Sort(EmpArr, (x, y) => x.HireDate.CompareTo(y.HireDate));
+               // Array.Sort(EmpArr, HireDate);
+
+                Console.WriteLine("Sorted Employee :");
+                foreach (var emp in EmpArr)
+                {
+                    Console.WriteLine(emp);
+                }
+
+                int boxingCount = 0;
+                foreach (var emp in EmpArr)
+                {
+                    object boxed = emp.HireDate; // Example of boxing
+                    var unboxed = (HiringDate)boxed; // Example of unboxing
+                    boxingCount += 2; // Count both boxing and unboxing
+                }
+                Console.WriteLine($"Boxing and Unboxing occurred {boxingCount} times.");
+
+
+
             }
             catch (Exception ex)
             {
