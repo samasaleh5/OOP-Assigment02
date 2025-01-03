@@ -35,12 +35,24 @@ namespace OOP_Assigment02
 
             #endregion
             #region inheritance
-            Parent p = new Parent(1, 2);
-            Console.WriteLine(p);
-            Console.WriteLine(p.product());
-            Child c = new Child(1, 2, 3);
-            Console.WriteLine(c);
-            Console.WriteLine(c.product());
+            //Parent p = new Parent(1, 2);
+            //Console.WriteLine(p);
+            //Console.WriteLine(p.product());
+            //Child c = new Child(1, 2, 3);
+            //Console.WriteLine(c);
+            //Console.WriteLine(c.product());
+            #endregion
+            //Part02
+            #region Question1
+            try
+            {
+                Employee emp = new Employee(1, "Sama", "S", 95000.90m, DateTime.Today, SecurityLevel.Developer);
+                Console.WriteLine(emp);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
             #endregion
 
 
