@@ -114,17 +114,36 @@ namespace OOP_Assigment02
             #endregion
             //Difference In Assigment03 //Part2
             #region Question01
+            //Person[] persons = new Person[3];
+            //persons[0] = new Person("Sama", 23);
+            //persons[1] = new Person("habiba", 24);
+            //persons[2] = new Person("huda", 25);
+
+            //Console.WriteLine("Details For All Persons");
+
+            //for (int i = 0; i < persons.Length; i++)
+            //{
+            //    Console.WriteLine($"Person {i + 1}: Name = {persons[i].name}, Age = {persons[i].age}");
+            //}
+            #endregion
+            #region Question02
             Person[] persons = new Person[3];
             persons[0] = new Person("Sama", 23);
             persons[1] = new Person("habiba", 24);
             persons[2] = new Person("huda", 25);
 
-            Console.WriteLine("Details For All Persons");
+            Person oldestPerson = persons[0];
+            Console.WriteLine("Details For The Oldest Person");
 
             for (int i = 0; i < persons.Length; i++)
             {
-                Console.WriteLine($"Person {i + 1}: Name = {persons[i].name}, Age = {persons[i].age}");
+                if (persons[i].age > oldestPerson.age)
+                {
+                    oldestPerson = persons[i];
+                }
             }
+            Console.WriteLine($"Name: {oldestPerson.name}");
+            Console.WriteLine($"Age: {oldestPerson.age}");
             #endregion
 
 
