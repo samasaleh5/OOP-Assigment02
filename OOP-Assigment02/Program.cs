@@ -74,45 +74,59 @@ namespace OOP_Assigment02
             // }
             #endregion
             #region Question4
-          
-            try
+            //try
+            //{
+            //    Employee[] EmpArr = new Employee[3];
+            //    EmpArr[0] = new Employee(1, "Sama", "F", 95000.90m, new HiringDate(1, 2, 2020), SecurityLevel.DBA);
+            //    EmpArr[1] = new Employee(5, "Saleh", "M", 100000.87m, new HiringDate(14, 6, 2017), SecurityLevel.Guest);
+            //    EmpArr[2] = new Employee(9, "zeiad", "z", 20000.09m, new HiringDate(30, 2, 2001), SecurityLevel.SecurityOfficer);
+
+            //    foreach (var emp in EmpArr)
+            //    {
+            //        Console.WriteLine(emp);
+            //    }
+            //    //sort not work by compare or by two arrgument array and item comapre with
+            //   // Array.Sort(EmpArr, (x, y) => x.HireDate.CompareTo(y.HireDate));
+            //   // Array.Sort(EmpArr, HireDate);
+
+            //    Console.WriteLine("Sorted Employee :");
+            //    foreach (var emp in EmpArr)
+            //    {
+            //        Console.WriteLine(emp);
+            //    }
+
+            //    int boxingCount = 0;
+            //    foreach (var emp in EmpArr)
+            //    {
+            //        object boxed = emp.HireDate; // Example of boxing
+            //        var unboxed = (HiringDate)boxed; // Example of unboxing
+            //        boxingCount += 2; // Count both boxing and unboxing
+            //    }
+            //    Console.WriteLine($"Boxing and Unboxing occurred {boxingCount} times.");
+
+
+
+            //}
+            //catch (Exception ex)
+            //{
+            //    Console.WriteLine(ex.Message);
+            //}
+            #endregion
+            //Difference In Assigment03 //Part2
+            #region Question01
+            Person[] persons = new Person[3];
+            persons[0] = new Person("Sama", 23);
+            persons[1] = new Person("habiba", 24);
+            persons[2] = new Person("huda", 25);
+
+            Console.WriteLine("Details For All Persons");
+
+            for (int i = 0; i < persons.Length; i++)
             {
-                Employee[] EmpArr = new Employee[3];
-                EmpArr[0] = new Employee(1, "Sama", "F", 95000.90m, new HiringDate(1, 2, 2020), SecurityLevel.DBA);
-                EmpArr[1] = new Employee(5, "Saleh", "M", 100000.87m, new HiringDate(14, 6, 2017), SecurityLevel.Guest);
-                EmpArr[2] = new Employee(9, "zeiad", "z", 20000.09m, new HiringDate(30, 2, 2001), SecurityLevel.SecurityOfficer);
-
-                foreach (var emp in EmpArr)
-                {
-                    Console.WriteLine(emp);
-                }
-                //sort not work by compare or by two arrgument array and item comapre with
-               // Array.Sort(EmpArr, (x, y) => x.HireDate.CompareTo(y.HireDate));
-               // Array.Sort(EmpArr, HireDate);
-
-                Console.WriteLine("Sorted Employee :");
-                foreach (var emp in EmpArr)
-                {
-                    Console.WriteLine(emp);
-                }
-
-                int boxingCount = 0;
-                foreach (var emp in EmpArr)
-                {
-                    object boxed = emp.HireDate; // Example of boxing
-                    var unboxed = (HiringDate)boxed; // Example of unboxing
-                    boxingCount += 2; // Count both boxing and unboxing
-                }
-                Console.WriteLine($"Boxing and Unboxing occurred {boxingCount} times.");
-
-
-
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine(ex.Message);
+                Console.WriteLine($"Person {i + 1}: Name = {persons[i].name}, Age = {persons[i].age}");
             }
             #endregion
+
 
         }
     }
